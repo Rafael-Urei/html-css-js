@@ -7,6 +7,7 @@
 }
 
 body {
+    position: relative;
     min-height: 100vh;
     background-color: hsl(0, 0%, 98%);
     font-family: 'Epilogue', sans-serif;
@@ -33,6 +34,11 @@ header, .logo_and_links, .links_container, .login_and_register_container {
     top: 40px;
     left: 5%;
     display: none;
+}
+
+#menu_icon {
+    display: none;
+    cursor: pointer;
 }
 
 .dropdown_menu_Features img {
@@ -92,6 +98,65 @@ header {
 }
 
 /* Main */
+
+#side_menu {
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: 1px;
+    width: 200px;
+    background-color: hsl(0, 0%, 98%);
+    transition: 500ms;
+    box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.212);
+}
+
+.closebtn {
+    font-size: 3em;
+    text-decoration: none;
+    color: black;
+    z-index: 1;
+    position: absolute;
+    right: 5px;
+    display: none;
+}
+
+#side_menu_structure {
+    display: flex;
+    margin: 25px;
+    flex-direction: column;
+    padding-top: 60px;
+    position: absolute;
+    transition: 400ms;
+}
+
+.side_menu_links,  .side_menu_login_register{
+    display: flex;
+    flex-direction: column;
+}
+
+.side_menu_links a, .side_menu_login_register a {
+    text-decoration: none;
+    padding: 10px;
+    color: hsl(0, 0%, 41%);
+}
+
+.side_menu_login_register {
+    padding: 20px;
+    text-align: center;
+}
+
+.side_menu_login_register a {
+    padding: 10px 20px;
+    margin-bottom: 5px;
+}
+
+.side_menu_login_register a:hover {
+    border-radius: 15px;
+    border: solid 2px rgba(0, 0, 0, 0.171);
+}
 
 main {
     display: flex;
@@ -159,9 +224,9 @@ main, .content_left {
     
 }
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1250px) {
 
-    .links_container, .login_and_register_container {
+    .links_container, .login_and_register_container a{
         display: none;
     }
 
@@ -212,5 +277,10 @@ main, .content_left {
         background-image: url(images/image-hero-mobile.png);
         height: 300px;
         width: auto;
+    }
+
+    #menu_icon {
+        margin-right: 10px;
+        display: flex;
     }
 }

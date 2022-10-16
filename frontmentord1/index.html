@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
     <title></title>
+    
 </head>
 <body>
 
@@ -24,6 +25,7 @@
             </div>
         </div>
         <div class="login_and_register_container"><!--Container que abriga os links de LOGIN e REGISTER.-->
+            <img id="menu_icon" onclick="openMenu()" src="images/icon-menu.svg" alt="">
             <a href="">Login</a>
             <a href="">Register</a>
         </div>
@@ -51,8 +53,22 @@
     </header>
 
     <!-- Conteúdo do Header! -->
-
     <main>
+        <div id="side_menu">
+            <a href="#" id="closebtn" class="closebtn" onclick="close_menu()">&times;</a>
+            <div id="side_menu_structure">
+                <div class="side_menu_links">
+                    <a href="">Features</a>
+                    <a href="">Company</a>
+                    <a href="">Careers</a>
+                    <a href="">About</a>
+                </div>
+                <div class="side_menu_login_register">
+                    <a href="">Login</a>
+                    <a href="">Register</a>
+                </div>
+            </div>
+        </div>
         <section class="content_left"> <!-- Conteúdo a esquerda do main.-->
             <div class="content_h1"> <!-- Abriga o H1-->
                 <h1>Make remote work</h1>
