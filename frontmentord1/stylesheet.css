@@ -95,14 +95,9 @@ header {
 
 main {
     display: flex;
-    min-height: 70vh;
-    justify-content: space-between;
     width: 1200px;
     margin: auto;
-}
-
-section {
-    min-height: 70vh;
+    justify-content: space-between;
 }
 
 main, .content_left {
@@ -110,7 +105,6 @@ main, .content_left {
 }
 
 .content_left {
-    min-height: 70vh;
     flex-direction: column;
     justify-content: space-around;
     padding-top: 100px;
@@ -119,6 +113,8 @@ main, .content_left {
 .content_h1 {
     font-size: 3.5em;
     width: 600px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .content_p {
@@ -126,6 +122,7 @@ main, .content_left {
     font-size: 1.3em;
     color: hsl(0, 0%, 41%);
     line-height: 1.5em;
+    padding-bottom: 100px;
 }
 
 #button_lm {
@@ -152,6 +149,7 @@ main, .content_left {
 }
 
 .container_img_right {
+    margin-top: 20px;
     background-image: url(images/image-hero-desktop.png);
     width: 500px;
     height: auto;
@@ -181,6 +179,7 @@ main, .content_left {
 
     .content_h1 {
         padding-top: 30px;
+        padding-bottom: 0px;
         width: auto;
         font-size: 1.5em;
         text-align: center;
@@ -190,12 +189,13 @@ main, .content_left {
         width: auto;
         padding: 20px;
         font-size: 1em;
-        text-align: justify;
+        text-align: center;
     }
 
     #button_div {
         padding: 20px;
         margin: 0px auto;
+        margin-bottom: 20px;
     }
 
     .content_img {
