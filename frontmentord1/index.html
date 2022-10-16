@@ -18,18 +18,18 @@
                 <img src="images/logo.svg" alt="Logo_Snap_SVG">
             </div>
             <div class="links_container"><!-- Container que abriga os links. -->
-                <a href="#">Features</a>
-                <a href="#">Company</a>
+                <a href="#" onclick="dropmenu()">Features <img src="images/icon-arrow-down.svg" alt="arrow_down" id="arrow_down"></a>
+                <a href="#" onclick="dropmenu2()">Company <img  src="images/icon-arrow-down.svg" alt="arrow_down" id="arrow_down2"></a>
                 <a href="#">Careers</a>
                 <a href="#">About</a>
             </div>
         </div>
         <div class="login_and_register_container"><!--Container que abriga os links de LOGIN e REGISTER.-->
             <img id="menu_icon" onclick="openMenu()" src="images/icon-menu.svg" alt="">
-            <a href="">Login</a>
-            <a href="">Register</a>
+            <a href="#">Login</a>
+            <a href="#">Register</a>
         </div>
-        <div class="dropdown_menu_Features"><!-- Container que abriga o menu que aparecerá ao clicar nos links.-->
+        <div id="dropmenu_f" class="dropdown_menu_Features"><!-- Container que abriga o menu que aparecerá ao clicar nos links.-->
             <div class="dropdown_menu_img"><!-- Container que abriga as IMG's do menu oculto.-->
                 <img src="images/icon-todo.svg" alt="TodoList_Icon">
                 <img src="images/icon-calendar.svg" alt="Calendar_Icon">
@@ -43,7 +43,7 @@
                 <a href="#">Planning</a>
             </div>
         </div>
-        <div class="dropdown_menu_Company"><!-- Container que abriga o menu que aparecerá ao clicar nos links.-->
+        <div id="dropmenu_c" class="dropdown_menu_Company"><!-- Container que abriga o menu que aparecerá ao clicar nos links.-->
             <div class="dropdown_menu_links"><!-- Container que abriga os links do menu que aparecerão.-->
                 <a href="#">History</a>
                 <a href="#">Our Team</a>
