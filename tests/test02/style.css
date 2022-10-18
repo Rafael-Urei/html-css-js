@@ -1,0 +1,185 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+html, body {
+    height: 100%;
+    min-width: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: -1px;
+}
+
+.menu_icon {
+    padding: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.div_principal {
+    display: flex;
+}
+
+.sub_item1, .sub_item2, .sub_item3 {
+    margin: 30px;
+    font-weight: bolder;
+}
+
+.sub_item3 {
+    display: flex;
+    margin-top: 10px;
+}
+
+.sub_item2 a, .sub_item3 a {
+    font-size: 0.95em;
+    padding: 15px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.432);
+}
+
+.sub_item2 a:hover {
+    background-color: rgba(192, 192, 192, 0.205);
+    border-radius: 10px;
+    transition: 400ms;
+}
+
+.sub_item3 a:hover {
+    background-color: rgba(192, 192, 192, 0.205);
+    border-radius: 10px;
+    transition: 700ms;
+    border: solid 1px rgba(0, 0, 0, 0.267);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1500px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+section  p {
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.548);
+    font-size: 1.5em;
+    padding: 50px 0px;
+    line-height: 2em;
+}
+
+#div_h1 {
+    width: 500px;
+}
+
+#div_p {
+    width: 500px;
+}
+
+section h1 {
+    font-size: 5vw;
+    padding-top: 100px;
+}
+
+.button_lm {
+    text-decoration: none;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    padding: 15px;
+}
+
+.button_lm:active {
+    background-color: white;
+    color: black;
+    transition: 200ms;
+    border: solid 1px black;
+}
+
+.div_image_hero {
+    display: flex;
+    margin-top: 100px;
+    width: 600px;
+    height: 700px;
+    background: url(image-hero-desktop.png) no-repeat top center;
+    background-size: contain;
+}
+
+.small_icons > img {
+    padding: 30px 30px 30px 0px;
+}
+
+#drop_content {
+    display: none;
+}
+
+@media all and (max-width: 1200px) {
+    .sub_item2, .sub_item3 > a{
+        display: none;
+    }
+
+    main {
+        width: 300px;
+        flex-direction: column-reverse;
+        margin: auto;
+    }
+
+    #div_h1 {
+        text-align: center;
+        width: 300px;
+    }
+
+    #div_p {
+        text-align: justify;
+        width: 300px;
+    }
+
+    #div_h1 h1 {
+        font-size: 1.5em;
+        padding-top: 0px;
+    }
+
+    #div_p p {
+        font-size: 1em;
+    }
+
+    .div_image_hero {
+        width: 300px;
+        height: 250px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        background: url(image-hero-mobile.png) no-repeat center center;
+        background-size: contain;
+    }
+
+    .small_icons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .small_icons > img {
+        scale: 0.6;
+        padding: 10px;
+    }
+
+    .menu_icon {
+        display: flex;
+    }
+
+    #first_c_p {
+        padding: 10px 0px 30px 0px;
+    }
+}

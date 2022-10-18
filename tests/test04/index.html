@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .dropdown {
+            width: 30px;
+            padding: 20px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            background-color: rgba(255, 255, 255, 0.233);
+            box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.158);
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 10px;
+        }
+
+        .dropdown p {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="dropdown">
+            <p  onclick="myFunction()">Features</p>
+            <div id="drop" class="dropdown-content">
+                <a href="#">Test1</a>
+                <a href="#">Test2</a>
+                <a href="#">Test3</a>
+            </div>
+        </div>
+    </header>
+    <script>
+        var dropdown = document.getElementById("drop")
+        function myFunction(){
+            if (dropdown.style.display=="none") {
+                dropdown.style.display="block"
+            } else {
+                dropdown.style.display="none"
+            }
+        }
+    </script>
+</body>
+</html>

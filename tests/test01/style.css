@@ -1,0 +1,47 @@
+@charset 'UTF-8';
+
+body {
+    background: #21445B;
+}
+
+.flex_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.flex_div figure {
+    height: 300px;
+    width: 50px;
+    background: #323050;
+    border-radius: 5px;
+    transition: 700ms;
+    box-shadow: inset 1px -60px 40px rgba(0, 0, 0, 0.397);
+}
+
+figcaption {
+    padding-bottom: 2px;
+    color: white;
+    font-size: 0.8em;
+    background-color: rgba(32, 31, 31, 0.699);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    flex-direction: column-reverse;
+}
+
+#photo1 {
+    background: #323050 url(images/furniture1.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#photo1:hover {
+    height: 400px;
+    width: 400px;
+}
+
+figcaption:hover {
+    visibility: visible;
+    width: 400px;
+}

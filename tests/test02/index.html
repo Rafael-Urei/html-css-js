@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="div_principal">
+            <div class="sub_item1">
+                <img src="logo.svg" alt="logo.svg">
+            </div>
+            <div class="sub_item2">
+                <a onclick="dropdown()" href="#">Features <img src="icon-arrow-down.svg" alt=""></a>
+                <a href="#">Company <img src="icon-arrow-down.svg" alt=""></a>
+                <a href="#">Carrers</a>
+                <a href="#">About</a>
+            </div>
+        </div>
+        <div class="sub_item3">
+            <img src="icon-menu.svg" alt="logo.svg" class="menu_icon">
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+        </div>
+        <div id="drop_content">
+            <a href=""><img src="media/images/icon-todo.svg" alt=""> Todo List</a>
+            <a href=""><img src="media/images/icon-calendar.svg" alt=""> Calendar</a>
+            <a href=""><img src="media/images/icon-reminders.svg" alt=""> Reminders</a>
+            <a href=""><img src="media/images/icon-planning.svg" alt=""> Planning</a>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div id="div_h1">
+                <h1>
+                    Make
+                    remote work
+                </h1>
+            </div>
+            <div id="div_p">
+                <p id="first_c_p">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+                <p style="padding: 0px 0px 30px 0px;"><a href="#" rel="A_button_to_learn_more" class="button_lm">Learn more</a></p>
+            </div>
+            <div>
+                <div class="small_icons">
+                    <img src="client-databiz.svg" alt="">
+                    <img src="client-audiophile.svg" alt="">
+                    <img src="client-meet.svg" alt="">
+                    <img src="client-maker.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <aside>
+            <div class="div_image_hero"></div>
+        </aside>
+    </main>
+    <script>
+        var dropdown_content = document.getElementById('drop_content')
+        function dropdown() {
+            if (dropdown_content.style.display == 'none') {
+                dropdown_content.style.display = 'flex'
+            } else {
+                dropdown_content.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>

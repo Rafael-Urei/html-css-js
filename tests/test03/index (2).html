@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo_first_nav"> <!-- Container que abriga a logo e a nav principal. -->
+            <div class="logo_div"> <!-- Container da logo-->
+                <img src="media/images/logo.svg" alt="snap.logo.svg">
+            </div>
+            <div class="inline_div_links"> <!-- Container dos 1os links -->
+                <a onclick="dropdownmenu1()" href="#" rel="Features-dropdown-menu">Features <img src="media/images/icon-arrow-down.svg" alt="arrow_down_beside_Features"></a>
+                <a href="#" rel="Company-dropwdown-menu">Company <img src="media/images/icon-arrow-down.svg" alt="arrow_down_beside_Company"></a>
+                <a href="#" rel="Careers-link">Careers</a>
+                <a href="#" rel="About-link">About</a>
+            </div>
+        </div>
+        <div class="login_register_div"> <!-- Container que abriga a segunda parte mais a direita do header. -->
+            <a href="#" rel="Login-button">Login</a>
+            <a href="#" rel="Register-button">Register</a>
+        </div>
+        <div id="drop_content">
+            <div id="drop_icons">
+                <img src="media/images/icon-todo.svg" alt="">
+                <img src="media/images/icon-calendar.svg" alt="">
+                <img src="media/images/icon-reminders.svg" alt="">
+                <img src="media/images/icon-planning.svg" alt="">
+            </div>
+            <div id="drop_links">
+                <a href="#">Todo List</a>
+                <a href="#">Calendar</a>
+                <a href="#">Reminders</a>
+                <a href="#">Planning</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="main_content">
+            <div id="left_content">
+                <h1>Make remote work</h1>
+                <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+                <a id="button_lm" href="#">Learn more</a>
+                <div id="footer">
+                    <img src="media/images/client-databiz.svg" alt="">
+                    <img src="media/images/client-audiophile.svg" alt="">
+                    <img src="media/images/client-meet.svg" alt="">
+                    <img src="media/images/client-maker.svg" alt="">
+                </div>
+            </div>
+            <div id="image_div">
+                <img id="image_big" src="media/images/image-hero-desktop.png" alt="">
+            </div>
+        </div>
+    </main>
+    <script src="scriptjs.js"></script>
+</body>
+</html>

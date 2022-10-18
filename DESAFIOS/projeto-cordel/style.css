@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'nordeste';
+    src: url(media/pacote-d012/font/xilosa/xilosa_.ttf);
+}
+
+:root {
+    --font-content: font-family: 'nordeste';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    background: black;
+}
+
+header > h1 {
+    color: white;
+    padding: 40px 0px 5px 0px;
+    font-size: 7vw;
+    font-family: 'nordeste';
+}
+
+header > p {
+    color: white;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    height: 100%;
+    background: white;
+}
+
+.container {
+    font-family: cursive;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background-color: white;
+    font-size: 3vw;
+    line-height: 2em;
+    padding-left: 10vw;
+    white-space: pre-line;
+}
+
+.container_style {
+    background-color: darkgray;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+
+#content1 {
+    background-image: url(media/pacote-d012/imagens/background001.jpg);
+}
+
+#content2  {
+    background-image: url(media/pacote-d012/imagens/background002.jpg);
+}
+
+.content {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.767);
+    padding: 10px;
+}
+
+footer p {
+    text-align: center;
+    padding: 5px;
+    background-color: black;
+    color: white;
+}

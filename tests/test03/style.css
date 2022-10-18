@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    color: hsl(0, 0%, 98%);
+}
+
+/* HEADER STYLE SHEETS */
+
+header {
+    padding: 20px 20px 0px 20px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logo_div, .logo_first_nav a,  .login_register_div a {
+    padding: 0px 30px 0px 30px;
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    font-weight: 500;
+    transition: 300ms;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.logo_div  {
+    padding-left: 0px;
+}
+
+#drop_content {
+    display: none;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+    top: 5%;
+    left: 10%;
+    box-shadow: 2px 16px 16px 2px rgba(0, 0, 0, 0.089);
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+#drop_links a {
+    text-decoration: none;
+    padding: 4.5px;
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.411);
+}
+
+#drop_icons img {
+    margin: 3px;
+}
+
+#drop_icons, #drop_links {
+    display: flex;
+    flex-direction: column;
+}
+
+#drop_content img {
+    margin-right: 10px;
+}
+
+/* Coloca padding na img arrow do nav.*/
+.inline_div_links img {
+    padding-bottom: 2px;
+}
+
+.login_register_div a {
+    padding: 10px 10px 10px 10px;
+    margin: 0px 20px 0px;
+}
+
+/* Transforma a primeira subdiv em inline-flex para alinhar os elementos.*/
+.logo_first_nav {
+    display: inline-flex;
+    transition: 400ms;
+}
+
+.logo_div:hover {
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.logo_first_nav a:hover {
+    color: hsl(0, 0%, 8%);
+}
+
+.login_register_div a:hover {
+    border: solid 1px hsl(0, 0%, 8%);
+}
+
+/*HEADER STYLE SHEETS*/
+
+/*SECTION STYLE SHEET*/
+
+main {
+    display: block;
+    width: 100%;
+}
+
+#main_content {
+    width: 1500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#left_content {
+    color: hsl(0, 0%, 8%);
+    width: 700px;
+    padding-top: 50px;
+}
+
+#left_content h1 {
+    font-size: 6em;
+    padding-top: 100px;
+}
+
+#left_content p {
+    font-size: 1.7em;
+    padding: 30px 0px 60px 0px;
+    text-align: justify;
+    color: hsl(0, 0%, 53%);
+    line-height: 1.5em;
+}
+
+#button_lm {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#footer {
+    padding-top: 100px;
+}
+
+#footer img {
+    margin-right: 20px;
+}
+
+#image_div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#image_div img {
+    display: flex;
+    max-width: 100%;
+}
+
+@media all  and (min-width: 300px) and (max-width: 890px) {
+    .inline_div_links, .login_register_div {
+        display: none;
+    }
+
+    #main_content {
+        flex-direction: column-reverse;
+        width: 375px;
+    }
+
+    #left_content {
+        text-align: center;
+        width: auto;
+    }
+
+    #left_content h1 {
+        font-size: 2em;
+        padding-top: 0%;
+    }
+
+    #left_content p {
+        font-size: 18px;
+        margin: 0px 30px 0px 30px;
+    }
+
+    #footer {
+        padding: 50px;
+    }
+
+    #footer img {
+        width: 40px;
+        margin: 12px;
+    }
+}
