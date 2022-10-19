@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="form001/style.css">
+</head>
+<body>
+    <!-- Todo objeto de entrada precisa de um name para linguagens como PHP
+    O ID é mais utilizado em JavaScript.
+        - Label cria relação entre uma etiqueta e um objeto.
+        - Útil para celulares.
+    Método de envio de formulários: GET and Post:
+        - Método GET é o método padrão onde mostra na URL: Utilizado quando os dados solicitados não são sensíveis, como nomes, sobrenomes, idade, etc.
+        Não pode usar GET se os caracteres passarem de 3 mil.
+        - Método POST: Dados sensíveis, como CPF, número de Cartão, etc.
+        Mas é melhor usar HTTPS, envio de arquivos.
+-->
+    <h1>Meu primeiro formulário.</h1>
+    <form action="cadastro.js" method="post" autocomplete="off">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p>
+            <input type="submit" value="Enviar"></sub></p>
+    </form>
+</body>
+</html>
