@@ -11,12 +11,11 @@ var sidelinkscontainer = document.getElementById("sidelist_container")
 var sidelinksimg = document.getElementById("sidemenu_menu_img")
 var sidelinksf = document.getElementById("sidelist_links_f")
 var sidelinksc = document.getElementById("sidelist_links_c")
-var html = document.getElementById("html")
 var back = document.getElementById("back")
 
 
 
-    
+back.style.display = "none"
 sidelinksf.style.display = "none"
 sidelinksc.style.display = "none"
 dropdown_menuc.style.display = "none"
