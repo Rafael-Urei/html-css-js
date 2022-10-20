@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-    <title></title>
-    
+    <title>Snap</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
 
     <!-- Conteúdo do Header! -->
 
+    <div class="background"  id="ibackground"></div>
     <header>
         <div class="logo_and_links"> <!-- Container que abriga os containers de LOGO, LINKS, LOGIN e REGISTER.-->
             <div class="logo_div">
@@ -54,12 +55,31 @@
 
     <!-- Conteúdo do Header! -->
     <main>
-        <div id="side_menu">
+        <div id="side_menu"> <!--Menu que abre quando a mediaQ é ativada e ao clicar no menu icon.-->
             <a href="#" id="closebtn" class="closebtn" onclick="close_menu()">&times;</a>
-            <div id="side_menu_structure">
+            <div id="side_menu_structure"> <!--Estrutura do menu.-->
                 <div class="side_menu_links">
-                    <a href="#">Features</a>
-                    <a href="#">Company</a>
+                    <a href="#" onclick="openlist()">Features <img src="images/icon-arrow-down.svg" alt="arrow_down" id="arrow_down3"></a>
+                        <div id="sidelist_container">
+                            <div id="sidemenu_menu_img">
+                                <img src="images/icon-todo.svg" alt="TodoList_Icon">
+                                <img src="images/icon-calendar.svg" alt="Calendar_Icon">
+                                <img src="images/icon-reminders.svg" alt="Reminders_Icon">
+                                <img src="images/icon-planning.svg" alt="Planning_Icon">
+                            </div>
+                            <div id="sidelist_links_f">
+                                <a href="#">Todo List</a>
+                                <a href="#">Calendar</a>
+                                <a href="#">Reminders</a>
+                                <a href="#">Planning</a>
+                            </div>
+                        </div>
+                    <a href="#" onclick="openlistc()">Company <img src="images/icon-arrow-down.svg" alt="arrow_down" id="arrow_down4"></a>
+                        <div id="sidelist_links_c">
+                            <a href="#">History</a>
+                            <a href="#">Our Team</a>
+                            <a href="#">Blog</a>
+                        </div>
                     <a href="#">Careers</a>
                     <a href="#">About</a>
                 </div>

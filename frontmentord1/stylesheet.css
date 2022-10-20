@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
 
@@ -102,15 +104,16 @@ header {
 #side_menu {
     display: none;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     position: absolute;
     z-index: 1;
     top: 0px;
     right: 1px;
-    width: 200px;
+    width: 250px;
     background-color: hsl(0, 0%, 98%);
     transition: 500ms;
     box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.212);
+    align-items: center;
 }
 
 .closebtn {
@@ -149,7 +152,7 @@ header {
 }
 
 .side_menu_login_register a {
-    padding: 10px 20px;
+    padding: 10px 60px;
     margin-bottom: 5px;
 }
 
@@ -222,6 +225,44 @@ main, .content_left {
     background-repeat: no-repeat;
     background-position: center center;
     
+}
+
+.background {
+    display: none;
+    background-color: black;
+    filter: opacity(50%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    transition: 500ms;
+}
+
+#sidelist_container {
+    padding-left: 30px;
+    
+}
+
+#sidelist_container, .sidemenu_menu_img, #sidelist_links_f, #sidelist_links_c {
+    display: flex;
+}
+
+#sidemenu_menu_img {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#sidelist_links_f {
+    display: none;
+    flex-direction: column;
+    padding: 10px 0px 10px 5px
+}
+
+#sidelist_links_c {
+    display: none;
+    flex-direction: column;
+    padding-left: 30px;
 }
 
 @media all and (max-width: 1250px) {
