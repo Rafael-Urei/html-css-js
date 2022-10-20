@@ -239,6 +239,7 @@ main, .content_left {
 }
 
 #sidelist_container {
+    display: none;
     padding-left: 30px;
     
 }
