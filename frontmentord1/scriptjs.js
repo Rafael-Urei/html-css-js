@@ -11,6 +11,11 @@ var sidelinkscontainer = document.getElementById("sidelist_container")
 var sidelinksimg = document.getElementById("sidemenu_menu_img")
 var sidelinksf = document.getElementById("sidelist_links_f")
 var sidelinksc = document.getElementById("sidelist_links_c")
+var html = document.getElementById("html")
+var back = document.getElementById("back")
+
+
+
     
 sidelinksf.style.display = "none"
 sidelinksc.style.display = "none"
@@ -45,6 +50,7 @@ function openMenu() {
         menu.style.display = "flex"
         menu_links.style.display = "flex"
         closebtn.style.display = "flex"
+        back.style.display = "flex"
     } else {
         menu.style.display = "none"
         menu_links.style.display = "none"
@@ -55,6 +61,7 @@ function close_menu() {
     if (menu.style.display == "flex") {
         menu.style.display = "none"
         closebtn.style.display = "none"
+        back.style.display = "none"
     }
 }
 
