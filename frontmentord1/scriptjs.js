@@ -7,7 +7,6 @@ let dropdown_menuc = document.getElementById("dropmenu_c")
 let menu = document.getElementById("side_menu")
 let menu_links = document.getElementById("side_menu_structure")
 var closebtn = document.getElementById("closebtn")
-let ibackground = document.getElementById("ibackground")
 var sidelinkscontainer = document.getElementById("sidelist_container")
 var sidelinksimg = document.getElementById("sidemenu_menu_img")
 var sidelinksf = document.getElementById("sidelist_links_f")
@@ -62,11 +61,11 @@ function close_menu() {
 function openlist() {
     if (sidelinksf.style.display == "none") {
         sidelinksf.style.display = "flex"
-        sidemenu_menu_img.style.display = "flex"
+        sidelinksimg.style.display = "flex"
         arrow_up3.src="images/icon-arrow-up.svg"
     } else {
         sidelinksf.style.display = "none"
-        sidemenu_menu_img.style.display = "none"
+        sidelinksimg.style.display = "none"
         arrow_up3.src="images/icon-arrow-down.svg"
     }
 }
