@@ -25,11 +25,9 @@ function dropmenu() {
     if (dropdown_menu.style.display == "none") {
         dropdown_menu.style.display = "flex"
         arrow_up.src="images/icon-arrow-up.svg"
-        arrow_up.alt="images/icon-arrow-up.svg"
     } else {
         dropdown_menu.style.display = "none"
         arrow_up.src="images/icon-arrow-down.svg"
-        arrow_up.alt="images/icon-arrow-down.svg"
     }
 }
 
@@ -37,11 +35,9 @@ function dropmenu2() {
     if (dropdown_menuc.style.display == "none") {
         dropdown_menuc.style.display = "flex"
         arrow_up2.src="images/icon-arrow-up.svg"
-        arrow_up2.alt="images/icon-arrow-up.svg"
     } else {
         dropdown_menuc.style.display = "none"
         arrow_up2.src="images/icon-arrow-down.svg"
-        arrow_up2.alt="images/icon-arrow-down.svg"
     }
 }
 
@@ -50,7 +46,6 @@ function openMenu() {
         menu.style.display = "flex"
         menu_links.style.display = "flex"
         closebtn.style.display = "flex"
-        ibackground.style.display = "block"
     } else {
         menu.style.display = "none"
         menu_links.style.display = "none"
@@ -61,7 +56,6 @@ function close_menu() {
     if (menu.style.display == "flex") {
         menu.style.display = "none"
         closebtn.style.display = "none"
-        ibackground.style.display = "none"
     }
 }
 
@@ -70,12 +64,10 @@ function openlist() {
         sidelinksf.style.display = "flex"
         sidemenu_menu_img.style.display = "flex"
         arrow_up3.src="images/icon-arrow-up.svg"
-        arrow_up3.alt="images/icon-arrow-up.svg"
     } else {
         sidelinksf.style.display = "none"
         sidemenu_menu_img.style.display = "none"
         arrow_up3.src="images/icon-arrow-down.svg"
-        arrow_up3.alt="images/icon-arrow-down.svg"
     }
 }
 
@@ -83,10 +75,8 @@ function openlistc() {
     if (sidelinksc.style.display == "none") {
         sidelinksc.style.display = "flex"
         arrow_up4.src="images/icon-arrow-up.svg"
-        arrow_up4.alt="images/icon-arrow-up.svg"
     } else {
         sidelinksc.style.display = "none"
         arrow_up4.src="images/icon-arrow-down.svg"
-        arrow_up4.alt="images/icon-arrow-down.svg"
     }
 }
