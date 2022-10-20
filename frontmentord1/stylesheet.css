@@ -112,7 +112,7 @@ header {
     width: 250px;
     background-color: hsl(0, 0%, 98%);
     transition: 500ms;
-    box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.212);
+    box-shadow: 1px 1px 250px rgba(0, 0, 0, 0.534);
     align-items: center;
 }
 
@@ -255,15 +255,6 @@ main, .content_left {
     padding-left: 30px;
 }
 
-#back {
-    display: none;
-    position: absolute;
-    filter: opacity(50%);
-    background-color: black;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-}
 
 @media all and (max-width: 1250px) {
 
