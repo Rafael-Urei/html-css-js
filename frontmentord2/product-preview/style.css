@@ -131,8 +131,9 @@ body {
 @media all and (max-width: 800px) {
     .main {
         height: 700px;
-        width: 375px;
+        width: 355px;
         flex-direction: column;
+        top: 55%;
     }
 
     .category {
