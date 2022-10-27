@@ -19,9 +19,12 @@ html {
 }
 
 body {
+    display: flex;
     height: 100vh;
     background-color: hsl(30, 38%, 92%);
     font-family: 'Fraunces', serif;
+    justify-content: center;
+    align-items: center;
 }
 
 .main, .img_content, .content_container, .price_content, .button_img, .button_a {
@@ -128,11 +131,12 @@ body {
     background-color: hsl(158, 36%, 20%);
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 665px) {
     .main {
         height: 700px;
         width: 355px;
         flex-direction: column;
+        scale: 0.95;
     }
 
     .category {
