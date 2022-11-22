@@ -125,15 +125,25 @@ button:hover {
     background-color: var(--dark_cyan2);
 }
 
-@media all and (max-width: 800px){
+@media all and (max-width: 685px){
     main {
-        scale: 0.5;
-        width: auto;
+        scale: 0.8;
+        width: 375px;
         height: auto;
         flex-direction: column;
     }
 
     picture img {
+        width: 375px;
         border-radius: 20px 20px 0px 0px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .price {
+        padding-bottom: 20px;
     }
 }
