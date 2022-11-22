@@ -9,32 +9,30 @@
     <link rel="shortcut icon" href="media/images/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
-    <div class="main">
-        <div class="img_content">
-        </div>
+    <main>
+        <picture>
+            <source media="(max-width: 800px)" srcset="media/images/image-product-mobile.jpg" alt="image_of_a_perfume_Gabrielle_Chanel_smaller">
+            <img src="media/images/image-product-desktop.jpg" alt="image_of_a_perfume_Gabrielle_Chanel_bigger">
+        </picture>
         <div class="content_container">
-            <div class="content_structure">
-               <h1 class="category">PERFUME</h1>
-               <h1 class="product_name">
-                    Gabrielle Essence Eau De Parfum
-               </h1>
-               <p class="product_description">
-                    A floral, solar and voluptous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.
-                </p>
-               <div class="price_content">
-                    <p class="descount">$149.99</p>
-                    <p class="main_price">$169.99</p>
-               </div>
-               <div class="button">
-                    <div class="button_img">
-                        <img src="media/images/icon-cart.svg" alt="icon_cart_shop">
-                    </div>
-                    <div class="button_a">
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
+            <header>
+                <p>PERFUME</p>
+                <h1>Gabrielle Essence Eau De Parfum</h1>
+            </header>
+            <section class="description">
+                <p>A floral, solar and voluptous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+            </section>
+            <div class="price">
+                <span>$149.99</span>
+                <del class="main_price">
+                    <span class="sr-only">Old price: </span>$169.99
+                </del>
             </div>
+            <button>
+                <img src="media/images/icon-cart.svg" alt="">
+                <a href="#" rel="Add_to_cart">Add to Cart</a>
+            </button>
         </div>
-    </div>
+    </main>
 </body>
 </html>
