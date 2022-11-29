@@ -36,8 +36,20 @@ img {
     padding: 15px;
 }
 
+#message {
+    display: none;
+    margin-bottom: 20px;
+    padding: 7px 20px 5px 20px;
+    color: hsl(25, 98%, 62%);
+    background-color: hsla(219, 13%, 25%, 0.603);
+    font-size: 0.85em;
+    border-radius: 20px;
+}
+
 header {
-    padding: 20px 30px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 20px 0px;
     color: hsl(0, 0%, 100%);
 }
 
@@ -58,7 +70,7 @@ nav {
 }
 
 nav button {
-    transition: 700ms;
+    transition: 500ms;
     font-weight: bold;
     color: hsl(217, 12%, 63%);
     width: 50px;
